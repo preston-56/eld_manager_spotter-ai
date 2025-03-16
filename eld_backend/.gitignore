@@ -1,0 +1,36 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+*.DS_Store
+
+# Virtual environments
+venv/
+.env
+.env.local
+
+# Django & database files
+db.sqlite3
+*.log
+media/
+staticfiles/
+*.pot
+*.pyc
+
+# Migrations (optional if you don't want to track them)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs & debug
+logs/
+*.log
+
+# Docker (if using)
+*.dockerfile
+docker-compose.override.yml
