@@ -63,7 +63,7 @@ const Sidebar = () => {
                 <RxDashboard size={18} /> <span>Dashboard</span>
               </Link>
               <Link
-                to="/trip-planner"
+                to="/trips"
                 className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
                 onClick={closeSidebar}
               >
@@ -77,14 +77,14 @@ const Sidebar = () => {
                 <PiMapPinAreaThin size={18} /> <span>Tracking</span>
               </Link>
               <Link
-                to="/driver-availability"
+                to="/drivers"
                 className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
                 onClick={closeSidebar}
               >
                 <IoIosPeople size={18} /> <span>Drivers</span>
               </Link>
               <Link
-                to="/eld-log"
+                to="/logs"
                 className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
                 onClick={closeSidebar}
               >
@@ -137,7 +137,7 @@ const Sidebar = () => {
             <RxDashboard size={18} /> <span>Dashboard</span>
           </Link>
           <Link
-            to="/trip-planner"
+            to="/trips"
             className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
           >
             <RiUserLocationFill size={18} /> <span>Trip Planner</span>
@@ -149,13 +149,13 @@ const Sidebar = () => {
             <PiMapPinAreaThin size={18} /> <span>Tracking</span>
           </Link>
           <Link
-            to="/driver-availability"
+            to="/drivers"
             className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
           >
             <IoIosPeople size={18} /> <span>Drivers</span>
           </Link>
           <Link
-            to="/eld-log"
+            to="/logs"
             className="flex items-center gap-1 p-2 hover:bg-gray-700 rounded"
           >
             <LuLogs size={18} /> <span>ELD Logs</span>
