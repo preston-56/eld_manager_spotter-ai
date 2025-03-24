@@ -6,7 +6,7 @@ const DriverAvailability = () => {
   
     return (
       <div className="bg-white p-4 rounded-lg shadow-md">
-        <h2 className="text-lg font-semibold mb-3">Driver Availability</h2>
+        <h2 className="text-lg font-semibold mb-3">Fleet Drivers</h2>
         <table className="w-full">
           <thead>
             <tr className="text-left bg-gray-100">
