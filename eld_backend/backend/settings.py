@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "trips",
     "logs",
     "users",
-    "services"
+    "services",
+    'drivers'
 ]
 
 MIDDLEWARE = [
