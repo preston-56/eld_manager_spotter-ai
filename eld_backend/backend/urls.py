@@ -5,6 +5,7 @@ from logs.routes.log import get_logs, create_log
 from users.routes.user import get_users, create_user
 from services.routes.service import get_services, create_service 
 from drivers.routes.drivers import drivers, driver_detail
+from login.routes.login import login_view
 from django.http import JsonResponse
 
 # Custom error handlers
@@ -48,4 +49,7 @@ urlpatterns = [
     # Driver routes
     path("drivers/", drivers, name="drivers"),
     path("drivers/<int:pk>/", driver_detail, name="driver_detail"),
+
+    # Logins routes
+    path('auth/login/', login_view, name = "login"),
 ]
