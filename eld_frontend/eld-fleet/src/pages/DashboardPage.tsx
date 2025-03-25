@@ -1,15 +1,10 @@
-import TopBar from "../components/TopBar";
 import Dashboard from "../components/Dashboard";
 
 const DashboardPage = () => {
   return (
     <div className="flex h-screen">
-
       {/* Main Content */}
       <div className="flex flex-col flex-1">
-        {/* Top Navigation Bar */}
-        <TopBar/>
-
         {/* Dashboard Content */}
         <Dashboard />
       </div>
