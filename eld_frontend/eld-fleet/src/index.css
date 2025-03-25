@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Default theme styles */
+html {
+  background-color: #f0f0f0; /* Light neutral background */
+  color: #333; /* Darker text for visibility */
+}
+
+/* Dark mode styles with softer light green or bluish tones */
+html.dark {
+    background-color: rgb(1, 99, 105); /* Rich deep teal background for a modern, elegant dark mode */
+    color: #333; /* Light gray text for contrast */
+}
+
+/* Light theme styles with a soft pastel greenish tint */
+html.light {
+  background-color: #e0f7f2; /* Soft pastel greenish-blue background */
+  color: #333; /* Dark text for clarity */
+}
