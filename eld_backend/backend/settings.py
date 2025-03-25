@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "services",
     'drivers',
     'login',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
