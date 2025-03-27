@@ -12,6 +12,7 @@ from users.routes.user import get_users, create_user
 from services.routes.service import get_services, create_service 
 from drivers.routes.drivers import drivers, driver_detail
 from login.routes.login import login_view
+from register.routes.register import register_user
 
 # API Documentation Schema
 schema_view = get_schema_view(
@@ -77,4 +78,7 @@ urlpatterns = [
 
     # Authentication Route
     path('auth/login/', login_view, name="login"),
+
+    # Registration Route
+    path("auth/register/", register_user, name="register_user"),
 ]
