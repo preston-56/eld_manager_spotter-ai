@@ -1,9 +1,18 @@
 from rest_framework.decorators import api_view
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework.response import Response
 from rest_framework import status
 from drivers.models import Driver
 from drivers.serializers import DriverSerializer
-
+from drivers.schema.drivers import driver_schema
+@swagger_auto_schema(
+    method="post",
+    request_body=driver_schema,
+    responses={
+        201: DriverSerializer(),
+        400: "Invalid data",
+    },
+)
 @api_view(["GET", "POST"])
 def drivers(request):
     """
