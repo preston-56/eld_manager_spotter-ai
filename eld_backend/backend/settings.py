@@ -18,7 +18,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Authentication settings
 LOGIN_URL = "/auth/login/"
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'drivers',
     'login',
     'drf_yasg',
+    'register',
 ]
 
 REST_FRAMEWORK = {
