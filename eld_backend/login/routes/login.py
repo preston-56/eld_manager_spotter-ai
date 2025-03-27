@@ -1,12 +1,21 @@
 from django.contrib.auth import authenticate
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from users.serializers.user import UserSerializer
 from login.serializers.login import LoginSerializer
-from login.models.login import LoginAttempt  
-
+from login.models.login import LoginAttempt
+from login.schema.login import login_attempt_schema
+@swagger_auto_schema(
+    method="post",
+    request_body=login_attempt_schema,
+    responses={
+        200: "Login successful",
+        401: "Invalid credentials",
+    },
+)
 @api_view(["POST"])
 def login_view(request):
     """Handles user login and logs login attempts."""
